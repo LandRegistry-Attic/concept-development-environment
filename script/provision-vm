@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo Setting up Docker...
+echo 'export DOCKER_OPTS="-H unix:///var/run/docker.sock -H tcp://0.0.0.0:4243"' > /etc/default/docker
+echo 'export DOCKER_HOST=tcp://0.0.0.0:4243' > /home/vagrant/.bash_profile
+echo 'cd /vagrant' >> /home/vagrant/.bash_profile
+stop docker
+start docker
+
+echo Installing Fig...
+curl -L https://github.com/orchardup/fig/releases/download/0.3.2/linux > /usr/local/bin/fig
+chmod +x /usr/local/bin/fig
+
