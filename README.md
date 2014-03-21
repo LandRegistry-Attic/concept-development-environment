@@ -8,7 +8,7 @@ Installation
 
 1. Check out this repository:
 
-        $ git clone git@github.com:LandRegistry/development.git landregistry
+        $ git clone git@github.com:LandRegistry/concept-development.git landregistry
         $ cd landregistry/
 
 2. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](http://www.vagrantup.com/downloads.html).
