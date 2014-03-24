@@ -30,6 +30,6 @@ You can then log into the development VM:
 
 To run a service, change to its directory and run Fig:
 
-    $ cd my-property/
+    $ cd concept-my-property/
     $ fig up
 
