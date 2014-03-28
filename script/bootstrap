@@ -1,3 +1,5 @@
 #!/bin/sh
 git clone git@github.com:LandRegistry/concept-my-property.git
 git clone git@github.com:LandRegistry/concept-performance-dashboard.git
+git clone git@github.com:LandRegistry/concept-titles-service.git
+
