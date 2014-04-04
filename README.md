@@ -33,5 +33,5 @@ To run a service, change to its directory and run Fig:
     $ cd concept-my-property/
     $ fig up
 
-The VM's IP address is 172.16.42.43 and all services will be available on that address. For example, concept-my-property can be accessed at [http://172.16.42.43:5000](http://172.16.42.43:5000). You might want to add a shortcut to your hosts file, e.g. [http://localdocker:5000](http://localdocker:5000).
+The VM's IP address is 172.16.42.43 and all services will be available on that address. For example, concept-my-property can be accessed at [http://172.16.42.43:7000](http://172.16.42.43:7000). You might want to add a shortcut to your hosts file, e.g. [http://localdocker:7000](http://localdocker:7000).
 
