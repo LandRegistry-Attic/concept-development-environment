@@ -1,0 +1,54 @@
+homepage:
+  build: concept-homepage/
+  command: python app.py
+  ports:
+   - "8000:8000"
+  volumes:
+   - concept-homepage:/code
+property:
+  build: concept-my-property/
+  command: python app.py
+  ports:
+   - "8001:8001"
+  volumes:
+   - concept-my-property:/code
+  links:
+   - titles
+updateregister:
+  build: concept-update-register/
+  command: ./run.py
+  ports:
+   - "8002:8002"
+  volumes:
+   - concept-update-register:/code
+  links:
+   - systemofrecord
+systemofrecord:
+  build: concept-system-of-record/
+  command: ./run.py
+  volumes:
+   - concept-system-of-record:/code
+  ports:
+   - "8003:8003"
+  links:
+   - systemofrecordredis
+   - titles
+systemofrecordredis:
+  image: orchardup/redis
+titles:
+  build: concept-titles-service/
+  command: sh -c "sleep 4; python app.py"
+  ports:
+   - "8004:8004"
+  volumes:
+   - concept-titles-service:/code
+  links:
+   - titlesdb
+titlesdb:
+  image: orchardup/postgresql
+  ports:
+   - "5432"
+  environment:
+    POSTGRESQL_USER: titles
+    POSTGRESQL_PASS: password
+    POSTGRESQL_DB: titles

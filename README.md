@@ -28,10 +28,13 @@ You can then log into the development VM:
 
     $ vagrant ssh
 
-To run a service, change to its directory and run Fig:
+To run the whole development environment, run Fig:
 
-    $ cd concept-my-property/
     $ fig up
 
-The VM's IP address is 172.16.42.43 and all services will be available on that address. For example, concept-my-property can be accessed at [http://172.16.42.43:7000](http://172.16.42.43:7000). You might want to add a shortcut to your hosts file, e.g. [http://localdocker:7000](http://localdocker:7000).
+A few useful places to start:
 
+ - [View properties](http://127.16.42.43:8001)
+ - [Add properties](http://127.16.42.43:8002)
+
+The VM's IP address is 172.16.42.43 and all services will be available on that address. For example, properties can be accessed at [http://172.16.42.43:8001](http://172.16.42.43:8001). You might want to add a shortcut to your hosts file, e.g. [http://localdocker:8001](http://localdocker:8001).
