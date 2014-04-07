@@ -38,3 +38,14 @@ A few useful places to start:
  - [Add properties](http://127.16.42.43:8002)
 
 The VM's IP address is 172.16.42.43 and all services will be available on that address. For example, properties can be accessed at [http://172.16.42.43:8001](http://172.16.42.43:8001). You might want to add a shortcut to your hosts file, e.g. [http://localdocker:8001](http://localdocker:8001).
+
+
+Setting up a new project
+------------------------
+
+ - Add to `script/bootstrap`, `.gitignore` and `fig.yml` in this repo
+ - Add to [Fourth Wall config](https://gist.github.com/bfirsh/71618c20c941c3e7e9cd)
+ - Travis
+ - Heroku
+ - Slack integration on master branch only
+
