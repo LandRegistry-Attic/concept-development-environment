@@ -37,7 +37,7 @@ systemofrecordredis:
   image: orchardup/redis
 titles:
   build: concept-titles-service/
-  command: sh -c "sleep 4; python app.py"
+  command: sh -c "sleep 10; python app.py"
   ports:
    - "8004:8004"
   volumes:
