@@ -54,8 +54,14 @@ titlesdb:
     POSTGRESQL_DB: titles
 geo:
   build: concept-geo-service/
-  command: sh -c "sleep 4; python app.py"
+  command: python manage.py runserver 0.0.0.0:8005
   ports:
    - "8005:8005"
   volumes:
    - concept-geo-service:/code
+  links:
+   - geodb
+geodb:
+  image: helmi03/docker-postgis
+  volumes:
+   - /var/lib/postgresql
