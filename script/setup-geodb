@@ -3,3 +3,5 @@ set -e
 
 fig run geodb sh -c "PGPASSWORD=docker createdb -h \$GEODB_1_PORT_5432_TCP_ADDR -U docker geo;"
 fig run geodb sh -c "export PGPASSWORD=docker; echo 'CREATE EXTENSION postgis; CREATE EXTENSION postgis_topology;' | psql -h \$GEODB_1_PORT_5432_TCP_ADDR -U docker geo;"
+fig run geo ./manage.py syncdb
+fig run geo ./manage.py migrate
