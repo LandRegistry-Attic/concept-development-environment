@@ -14,6 +14,7 @@ property:
    - concept-my-property:/code
   links:
    - titles
+   - geo
 updateregister:
   build: concept-update-register/
   command: ./run.py
