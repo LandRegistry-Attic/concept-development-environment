@@ -32,6 +32,7 @@ systemofrecord:
   ports:
    - "8003:8003"
   links:
+   - geo
    - systemofrecordredis
    - titles
 systemofrecordredis:
