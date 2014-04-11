@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+cd concept-register-data/
+echo "Generating all titles... (will take a few minutes)"
+fig run generate ruby generate_registers.rb -a
+echo "Uploading titles to system of record... (will take a few minutes - hit ctrl-c if you only want a subset of data)"
+fig run generate python upload_titles_to_system_of_record_in_parallel.py http://172.16.42.43:8003/entries
+
+
