@@ -27,6 +27,10 @@ Start the development VM:
 You can then log into the development VM:
 
     $ vagrant ssh
+    
+First, you need to run a script to set up the geo database:
+
+    $ script/setup-geodb
 
 To run the whole development environment, run Fig:
 
@@ -39,6 +43,12 @@ A few useful places to start:
 
 The VM's IP address is 172.16.42.43 and all services will be available on that address. For example, properties can be accessed at [http://172.16.42.43:8001](http://172.16.42.43:8001). You might want to add a shortcut to your hosts file, e.g. [http://localdocker:8001](http://localdocker:8001).
 
+Loading test data
+-----------------
+
+If you want to load some test data, run this script (it'll take a while, but you can exit half way through if you only want a partial data set):
+
+    $ script/populate-with-data
 
 Setting up a new project
 ------------------------
