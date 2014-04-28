@@ -28,7 +28,7 @@ You can then log into the development VM:
 
     $ vagrant ssh
     
-First, you need to run a script to set up the geo database:
+Before the first time you run the development environment, you need to run a script to set up the geo database:
 
     $ script/setup-geodb
 
