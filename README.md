@@ -38,8 +38,8 @@ To run the whole development environment, run Fig:
 
 A few useful places to start:
 
- - [View properties](http://127.16.42.43:8001)
- - [Add properties](http://127.16.42.43:8002)
+ - [View properties](http://172.16.42.43:8001)
+ - [Add properties](http://172.16.42.43:8002)
 
 The VM's IP address is 172.16.42.43 and all services will be available on that address. For example, properties can be accessed at [http://172.16.42.43:8001](http://172.16.42.43:8001). You might want to add a shortcut to your hosts file, e.g. [http://localdocker:8001](http://localdocker:8001).
 
