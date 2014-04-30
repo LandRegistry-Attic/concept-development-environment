@@ -67,3 +67,10 @@ geodb:
   image: helmi03/docker-postgis
   volumes:
    - /var/lib/postgresql
+thirdparty:
+  build: concept-thirdparty/
+  command: python app.py
+  ports:
+   - "8006:8006"
+  volumes:
+   - concept-thirdparty:/code
