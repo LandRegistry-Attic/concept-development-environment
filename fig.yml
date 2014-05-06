@@ -5,13 +5,13 @@ homepage:
    - "8000:8000"
   volumes:
    - concept-homepage:/code
-property:
-  build: concept-my-property/
+frontend:
+  build: concept-frontend/
   command: python app.py
   ports:
    - "8001:8001"
   volumes:
-   - concept-my-property:/code
+   - concept-frontend:/code
   links:
    - titles
    - geo
