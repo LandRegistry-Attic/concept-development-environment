@@ -25,10 +25,10 @@ updateregister:
   links:
    - systemofrecord
 systemofrecord:
-  build: concept-system-of-record/
+  build: system-of-record/
   command: ./run.py
   volumes:
-   - concept-system-of-record:/code
+   - system-of-record:/code
   ports:
    - "8003:8003"
   links:
@@ -64,6 +64,6 @@ geo:
   links:
    - geodb
 geodb:
-  image: helmi03/docker-postgis
-  volumes:
+  build: docker-postgis/
+  command: ./start.sh
    - /var/lib/postgresql

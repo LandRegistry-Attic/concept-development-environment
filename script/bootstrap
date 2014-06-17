@@ -9,4 +9,6 @@ git clone git@github.com:LandRegistry/concept-titles-service.git
 git clone git@github.com:LandRegistry/concept-update-register.git
 git clone git@github.com:LandRegistry/concept-thirdparty.git
 git clone git@github.com:LandRegistry/concept-official-copy.git
-
+git clone git@github.com:LandRegistry/system-of-record.git
+git clone git@github.com:LandRegistry/mint.git
+git clone git@github.com:helmi03/docker-postgis.git
