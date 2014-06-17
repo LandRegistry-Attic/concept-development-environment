@@ -1,6 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "docker-0.8.0"
-  config.vm.box_url = "https://s3.amazonaws.com/static.orchardup.com/binaries/vagrant/vagrant-docker-0.8.0-virtualbox.box"
+  config.vm.box = "hashicorp/precise64"
 
   config.ssh.forward_agent = true
   config.vm.network "private_network", :ip => "172.16.42.43"
