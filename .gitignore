@@ -11,5 +11,6 @@ concept-thirdparty
 concept-official-copy
 system-of-record
 mint
+the-feeder
 docker-postgis
 .DS_Store
