@@ -34,7 +34,7 @@ Before the first time you run the development environment, you need to run a scr
 
 To run the whole development environment, run Fig:
 
-    $ fig up
+    $ fig up -f fig-concept.yml
 
 A few useful places to start:
 
