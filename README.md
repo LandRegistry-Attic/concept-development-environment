@@ -33,6 +33,10 @@ Before the first time you run the development environment, you need to run a scr
     $ script/setup-geodb
 
 To run the whole development environment, run Fig:
+    
+    $ fig up 
+
+or:  
 
     $ fig up -f fig-concept.yml
 
