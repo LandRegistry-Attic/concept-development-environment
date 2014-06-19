@@ -36,11 +36,11 @@ To run the whole development environment, run Fig:
     
     $ fig up 
 
-or:  
+or for concept environments:  
 
     $ fig up -f fig-concept.yml
 
-A few useful places to start:
+If you're running the concept code, a few useful places to start:
 
  - [View properties](http://172.16.42.43:8001)
  - [Add properties](http://172.16.42.43:8002)
