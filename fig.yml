@@ -3,3 +3,8 @@ homepage:
   command: python app.py
   ports:
    - "8000:8000"
+systemofrecord:
+  build: system-of-record/
+  command: ./run.py
+  ports:
+   - "8001:8001"
