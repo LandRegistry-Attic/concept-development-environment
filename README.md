@@ -15,7 +15,14 @@ Installation
 
 3. Check out the other Land Registry repositories:
 
+        For alpha codebase
+
+         $ script/bootstrap-alpha
+
+        For concept codebase
+
         $ script/bootstrap
+
 
 Running stuff
 -------------
@@ -27,16 +34,16 @@ Start the development VM:
 You can then log into the development VM:
 
     $ vagrant ssh
-    
+
 Before the first time you run the development environment, you need to run a script to set up the geo database:
 
     $ script/setup-geodb
 
 To run the whole development environment, run Fig:
-    
-    $ fig up 
 
-or for concept environments:  
+    $ fig up
+
+or for concept environments:
 
     $ fig up -f fig-concept.yml
 
