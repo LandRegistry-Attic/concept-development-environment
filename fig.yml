@@ -10,3 +10,10 @@ mint:
    - "8002:8002"
   links:
    - systemofrecord
+updateregister:
+  build: update-register/
+  command: ./run.py
+  ports:
+   - "8003:8003"
+  links:
+   - mint
