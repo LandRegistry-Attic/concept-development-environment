@@ -1,14 +1,6 @@
-#!/bin/sh
-git clone git@github.com:LandRegistry/concept-geo-service.git
-git clone git@github.com:LandRegistry/concept-homepage.git
-git clone git@github.com:LandRegistry/concept-frontend.git
-git clone git@github.com:LandRegistry/concept-performance-dashboard.git
-git clone git@github.com:LandRegistry/concept-register-data.git
-git clone git@github.com:LandRegistry/concept-system-of-record.git
-git clone git@github.com:LandRegistry/concept-titles-service.git
-git clone git@github.com:LandRegistry/concept-update-register.git
-git clone git@github.com:LandRegistry/concept-thirdparty.git
-git clone git@github.com:LandRegistry/concept-official-copy.git
-git clone git@github.com:LandRegistry/system-of-record.git
-git clone git@github.com:LandRegistry/mint.git
-git clone git@github.com:helmi03/docker-postgis.git
+#!/bin/bash
+ 
+apps=(landregistry/concept-geo-service landregistry/concept-homepage landregistry/concept-frontend landregistry/concept-performance-dashboard landregistry/concept-register-data landregistry/concept-system-of-record landregistry/concept-titles-service landregistry/concept-update-register landregistry/concept-thirdparty landregistry/concept-official-copy landregistry/system-of-record landregistry/mint helmi03/docker-postgis  )
+
+source script/_bstrap
+bstrap "${apps[@]}"

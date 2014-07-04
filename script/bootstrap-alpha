@@ -1,13 +1,6 @@
-#!/bin/sh
-for app in system-of-record mint the-shed; do
-	if [ -e $app ] ; then
-		echo "getting latest: $app"
-		cd $app
-		git pull
-		cd -
-	else 
-		echo "getting for first time: $app"
-		git clone git@github.com:LandRegistry/$app.git
-	fi
-done
+#!/bin/bash
 
+apps=(landregistry/system-of-record landregistry/mint landregistry/the-shed)
+
+source script/_bstrap
+bstrap "${apps[@]}"

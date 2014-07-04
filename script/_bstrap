@@ -1,0 +1,18 @@
+#!/bin/sh
+
+function bstrap {
+  apps="${@}"
+  for app in $apps; do
+    _app=$(basename $app)
+    if [ -e $_app ] ; then
+      echo "getting latest: $app"
+      cd $_app
+      git pull
+      cd -
+    else 
+      echo "getting for first time: $app"
+      git clone git@github.com:$app.git
+    fi
+  done
+}
+
