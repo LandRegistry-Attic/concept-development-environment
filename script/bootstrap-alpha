@@ -1,4 +1,13 @@
 #!/bin/sh
-git clone git@github.com:LandRegistry/system-of-record.git
-git clone git@github.com:LandRegistry/mint.git
-git clone git@github.com:LandRegistry/the-shed.git
+for app in system-of-record mint the-shed; do
+	if [ -e $app ] ; then
+		echo "getting latest: $app"
+		cd $app
+		git pull
+		cd -
+	else 
+		echo "getting for first time: $app"
+		git clone git@github.com:LandRegistry/$app.git
+	fi
+done
+
