@@ -3,6 +3,8 @@ systemofrecord:
   command: ./run.py
   ports:
    - "8001:8001"
+  link:
+   - sysofrecdb
 mint:
   build: mint/
   command: ./run.py
