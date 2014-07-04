@@ -17,3 +17,12 @@ updateregister:
    - "8003:8003"
   links:
    - mint
+sysofrecdb:
+  build: docker-postgresql/
+#  image: landregistry/postgresql
+  ports:
+   - "5432"
+  environment:
+    POSTGRESQL_USER: sysofrec
+    POSTGRESQL_PASS: password
+    POSTGRESQL_DB: sysofrec

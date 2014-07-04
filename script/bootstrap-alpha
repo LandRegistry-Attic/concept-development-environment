@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apps=(landregistry/system-of-record landregistry/mint landregistry/the-shed)
+apps=(landregistry/system-of-record landregistry/mint landregistry/the-shed landregistry/docker-postgresql)
 
 source script/_bstrap
 bstrap "${apps[@]}"
