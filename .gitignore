@@ -15,4 +15,5 @@ the-feeder
 the-shed
 docker-postgis
 update-register
+docker-postgresql
 .DS_Store
